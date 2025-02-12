@@ -28,7 +28,6 @@ public class GetBookProcessor implements RequestProcessor{
         try {
             String jsonResult = null;
             Gson gson = new Gson();
-
             if (request.containsParameter("id")) {
                 Long id = Long.parseLong(request.getParemeter("id"));
                 LOGGER.info("ИД = " + id);
@@ -41,7 +40,6 @@ public class GetBookProcessor implements RequestProcessor{
                 jsonResult = gson.toJson(books);
                 LOGGER.info("Получение всех книг - ОК");
             }
-
             String response = "" +
                     "HTTP/1.1 200 OK\r\n" +
                     "Connect-Type: application/json\r\n" +

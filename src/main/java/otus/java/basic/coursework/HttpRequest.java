@@ -93,5 +93,4 @@ public class HttpRequest {
         LOGGER.info("HEADERS: " + headers);
         LOGGER.info("BODY: " + body);
     }
-
 }

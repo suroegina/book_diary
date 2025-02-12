@@ -45,4 +45,3 @@ INSERT INTO public.book (author,title,pages,date_started,date_finished,format_id
 	 ('Рэй Брэдбери','Вино из одуванчиков',NULL,NULL,NULL,3,3,NULL,NULL,NULL),
 	 ('Рэй Брэдбери','Путешествие во времени',NULL,'2024-05-05','2024-05-25',3,1,8,NULL,NULL),
 	 ('Александр Сергеевич Пушкин','Евгений Онегин',800,NULL,NULL,2,3,5,'CСкучное произведение',NULL);
-

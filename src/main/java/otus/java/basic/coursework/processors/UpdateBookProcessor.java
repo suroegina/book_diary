@@ -54,6 +54,5 @@ public class UpdateBookProcessor implements RequestProcessor{
             output.write(response.getBytes(StandardCharsets.UTF_8));
             LOGGER.info("Обновление книги - Книга не найдена по ИД");
         }
-
     }
 }

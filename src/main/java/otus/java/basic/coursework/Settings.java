@@ -21,8 +21,6 @@ public class Settings {
         }
     }
 
-
-
     public int getPort() {
         return port;
     }
@@ -34,5 +32,4 @@ public class Settings {
     public int getMaxReqSize() {
         return maxReqSize;
     }
-
 }

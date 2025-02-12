@@ -18,7 +18,6 @@ public class Dispatcher {
     private Default404Processor default404Processor;
     private Default500Processor default500Processor;
 
-
     public Dispatcher() {
         BookService bookService = new BookService();
         this.router = new HashMap<>();

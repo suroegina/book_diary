@@ -32,7 +32,7 @@ public class BookService {
 
     public void createNewBook(Book book) {
         Long newId = books.stream().mapToLong(Book::getId).max().getAsLong() + 1;
-        LOGGER.debug("NewId BOOK = " + newId);
+        LOGGER.debug("Book NewId = " + newId);
         books.add(new Book(newId, book.getAuthor(), book.getTitle(), book.getPages(), book.getDateStarted(), book.getDateFinished(), book.getDescription(), book.getFormat(), book.getStatus(), book.getRating(), book.getNote()));
         bookServiceJDBC.addBook(newId, book.getAuthor(), book.getTitle(), book.getPages(), book.getDateStarted(), book.getDateFinished(), book.getDescription(), book.getFormat(), book.getStatus(), book.getRating(), book.getNote());
     }

@@ -89,9 +89,7 @@ public class Book {
         return format;
     }
 
-    public void setFormat(int format) {
-        this.format = format;
-    }
+    public void setFormat(int format) { this.format = format;}
 
     public int getStatus() {
         return status;

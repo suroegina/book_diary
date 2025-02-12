@@ -1,11 +1,8 @@
 package otus.java.basic.coursework.processors;
 
-import com.google.gson.Gson;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import otus.java.basic.coursework.BadRequestException;
 import otus.java.basic.coursework.HttpRequest;
-import otus.java.basic.coursework.application.ErrorDto;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -23,4 +20,5 @@ public class Default500Processor implements RequestProcessor{
         output.write(response.getBytes(StandardCharsets.UTF_8));
         LOGGER.error("Internal Server Error: something wrong...");
     }
+
 }

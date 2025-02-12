@@ -29,4 +29,5 @@ public class Default404Processor implements RequestProcessor{
         output.write(response.getBytes(StandardCharsets.UTF_8));
         LOGGER.error(errorDto.getDescription());
     }
+
 }

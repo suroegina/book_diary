@@ -55,6 +55,5 @@ public class DeleteBookProcessor implements RequestProcessor{
             output.write(response.getBytes(StandardCharsets.UTF_8));
             LOGGER.info("Удаление всех книг - Книга не найдена по ИД");
         }
-
     }
 }

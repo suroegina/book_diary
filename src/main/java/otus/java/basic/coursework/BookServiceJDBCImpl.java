@@ -12,6 +12,7 @@ public class BookServiceJDBCImpl implements BookServiceJDBC{
     private static final Logger LOGGER = LogManager.getLogger(BookServiceJDBCImpl.class);
 
     private static final String DATABASE_URL = "jdbc:postgresql://localhost:5432/book_diary_db";
+
     private static final String BOOKS_QUERY = "select b.id, b.author, b.title, b.pages, b.date_started, b.date_finished, b.description, b.format_id, b.status_id, b.rating, b.notes from book b";
 
     private static final String BOOK_ADD_QUERY = "" +
@@ -21,7 +22,6 @@ public class BookServiceJDBCImpl implements BookServiceJDBC{
     private static final String BOOK_UPDATE_QUERY = "update book set author = ?, title = ?, pages = ?, description = ?, rating = ?, notes = ? where id = ?";
 
     private static final String BOOK_DELETE_QUERY = "delete from book where id = ?";
-
 
     private Connection connection;
 

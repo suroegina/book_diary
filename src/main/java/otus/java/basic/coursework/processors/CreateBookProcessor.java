@@ -35,5 +35,4 @@ public class CreateBookProcessor implements RequestProcessor{
                 "<html><body><h1>CREATE BOOK</h1></body></html>";
         output.write(response.getBytes(StandardCharsets.UTF_8));
     }
-
 }
